@@ -8,3 +8,10 @@ function getAges(sum,difference){
   else return ([individualAge1, individualAge2]);
 };
 ```
+#### Is this a triangle?
+```javascript
+function isTriangle(a,b,c){
+  if(a < b + c && b < a + c && c < a + b) return true;
+  else return false;
+```
+
