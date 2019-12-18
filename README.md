@@ -1,17 +1,11 @@
 # solved-tasks
-#### Calculate Two People's Individual Ages
+#### 101 Dalmatians - squash the bugs, not the dogs!
 ```javascript
-function getAges(sum,difference){
-  let individualAge2 = (sum-difference)/2;
-  let individualAge1 = sum-individualAge2;
-  if(sum < 0 || difference < 0 || individualAge1 < 0 || individualAge2 < 0) return null;
-  else return ([individualAge1, individualAge2]);
-};
+function howManyDalmatians(numer){
+  const dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIANS!!!"];
+  let respond = (numer <= 10)? dogs[0]:
+  (numer <= 50)? dogs[1]:
+  (numer === 101)?  dogs[3] : dogs[2]
+  return respond;
+  }
 ```
-#### Is this a triangle?
-```javascript
-function isTriangle(a,b,c){
-  if(a < b + c && b < a + c && c < a + b) return true;
-  else return false;
-```
-
