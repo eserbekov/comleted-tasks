@@ -1,10 +1,7 @@
 # solved-tasks
-#### Be Concise I - The Ternary Operator
+#### Training JS #7: if..else and ternary operator
 ```javascript
-function describeAge(age){
-  let a=(age>64)?"elderly":
-  (age>17)?"adult":
-  (age>12)?"teenager":"kid";
-   return `You're a(n) ${a}`;
-};
+function saleHotdogs(n){
+  return ( n<5? n*100:n<10? n*95:n*90)
+}
 ```
