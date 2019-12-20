@@ -1,7 +1,17 @@
 # solved-tasks
-#### Training JS #7: if..else and ternary operator
+#### simple calculator
 ```javascript
-function saleHotdogs(n){
-  return ( n<5? n*100:n<10? n*95:n*90)
+function calculator(a,b,sign){
+  if(typeof a !== 'number'  || typeof b != 'number') return "unknown value"
+    switch(sign){
+      case '+': return (a+b);
+      case '-': return (a-b);
+      case '*': return (a*b);
+      case '/': return (a/b);
+      default:
+      return "unknown value"
+  
+    }
+
 }
 ```
