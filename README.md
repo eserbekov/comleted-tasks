@@ -1,26 +1,22 @@
 # solved-tasks
-#### simple calculator
+#### Sum of Multiples
 ```javascript
-function calculator(a,b,sign){
-  if(typeof a !== 'number'  || typeof b != 'number') return "unknown value"
-    switch(sign){
-      case '+': return (a+b);
-      case '-': return (a-b);
-      case '*': return (a*b);
-      case '/': return (a/b);
-      default:
-      return "unknown value"
-  
+function sumMul(n,m){
+  let sum = 0;
+  if(n<=0||m<=0)return "INVALID";
+  for(let i = 0; i < m; i++){
+    if(i%n===0)  sum+=i;
     }
-
+    return sum;
 }
 ```
-#### Factorial
+#### Beginner Series #3 Sum of Numbers
 ```javascript
-function factorial(n){
-let f = 1;
-  for(let i = 1; i<=n; i++){
-    f*=i;
-  }return f;
+function getSum( a,b ){
+ let sum = 0;
+ if(a===b) return a||b;
+ for(let i = Math.min(a,b); i <= Math.max(a,b); ++i){
+   sum += i;
+   }return sum;  
 }
 ```
