@@ -1,22 +1,11 @@
 # solved-tasks
-#### Sum of Multiples
+#### Sum of the first nth term of Series
 ```javascript
-function sumMul(n,m){
+function SeriesSum(n){
   let sum = 0;
-  if(n<=0||m<=0)return "INVALID";
-  for(let i = 0; i < m; i++){
-    if(i%n===0)  sum+=i;
+  for(let i = 0; i < n; i++){
+    sum += 1/(1+i*3);
     }
-    return sum;
-}
-```
-#### Beginner Series #3 Sum of Numbers
-```javascript
-function getSum( a,b ){
- let sum = 0;
- if(a===b) return a||b;
- for(let i = Math.min(a,b); i <= Math.max(a,b); ++i){
-   sum += i;
-   }return sum;  
+    return sum.toFixed(2);
 }
 ```
