@@ -1,11 +1,14 @@
 # solved-tasks
-#### Sum of the first nth term of Series
+#### Draw stairs
 ```javascript
-function SeriesSum(n){
-  let sum = 0;
-  for(let i = 0; i < n; i++){
-    sum += 1/(1+i*3);
+function drawStairs(n) {
+    let s = '';
+    for (let i = 0; i < n; i++) {
+        s = s + ' '.repeat(i) + 'I';
+        if (i < (n - 1)) {
+            s += '\n';
+        }
     }
-    return sum.toFixed(2);
+    return s;
 }
 ```
