@@ -1,18 +1,29 @@
 # solved-tasks
-#### isReallyNaN
+#### Squares sequence
 ```javascript
-const isReallyNaN = (val) => {
-  return Number.isNaN(val);
-  return true || false;
-};
-```
-#### Filter the number
-```javascript
-let FilterString = function(value) {
-  let str = '';
-  for(let i=0; i < value.length; i++){
-    if(value[i]== +value[i]) str+=value[i];
+function squares(x, n) {
+  let a = 1;
+  let arr = [];
+  for(let i = 1; i <= n; i++){
+    arr.push(Math.pow(x,a));
+    a*=2;
   }
-  return +str;
+  return arr;
 }
 ```
+#### Square Every Digit
+```javascript
+function squareDigits(num){
+  const digits = num.toString().split('')
+  const squaredDigits = digits.map(n => n * n)
+  const squaredNumber = squaredDigits.join('')
+  return +squaredNumber;
+  
+}
+```
+#### You're a square!
+```javascript
+let isSquare = function(n){
+  return Number.isInteger(Math.sqrt(n));
+}
+``` 
