@@ -1,29 +1,44 @@
 # solved-tasks
-#### Squares sequence
+#### Lario and Muigi Pipe Problem
 ```javascript
-function squares(x, n) {
-  let a = 1;
-  let arr = [];
-  for(let i = 1; i <= n; i++){
-    arr.push(Math.pow(x,a));
-    a*=2;
+function pipeFix(numbers){
+  let firstIndex = numbers[0];
+  let newArray = [];
+  for (let i = 0; firstIndex <= Math.max(...numbers); i++ ){
+    newArray.push(firstIndex);
+    firstIndex++;
   }
-  return arr;
+  return newArray;
 }
 ```
-#### Square Every Digit
+#### Expressions Matter
 ```javascript
-function squareDigits(num){
-  const digits = num.toString().split('')
-  const squaredDigits = digits.map(n => n * n)
-  const squaredNumber = squaredDigits.join('')
-  return +squaredNumber;
-  
+function expressionMatter(a, b, c) {
+  return Math.max( a+b+c, (a+b)*c, a*(b+c), a*b*c );
 }
 ```
-#### You're a square!
+#### Tortoise racing
 ```javascript
-let isSquare = function(n){
-  return Number.isInteger(Math.sqrt(n));
+function race(v1, v2, g) {
+  if (v2 <= v1) {
+    return null;
+  }
+  let res = Math.trunc(3600*g/(v2-v1));
+  return [Math.trunc(res/3600), Math.trunc(res/60)%60, res%60];
 }
-``` 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
