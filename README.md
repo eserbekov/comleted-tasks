@@ -1,18 +1,17 @@
 # solved-tasks
-#### Binary Addition
+#### Calculate Price Excluding VAT
 ```javascript
-function addBinary(a,b) {
-  return (a+b).toString(2);
+function excludingVatPrice(price){
+  if(price===null) return -1;
+  return +(price*100/115).toFixed(2);
 }
 ```
-#### Convert to Binary
+#### Parse nice int from char problem
 ```javascript
-function toBinary(n){
-  return +n.toString(2);
+function getAge(inputString){
+  return parseInt(inputString)// return correct age (int). Happy coding :) 
 }
 ```
-
-
 
 
 
