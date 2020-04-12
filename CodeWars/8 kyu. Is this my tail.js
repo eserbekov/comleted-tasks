@@ -1,9 +1,3 @@
-//8 kyu. get character from ASCII Value
-
-function getChar(c){
-    return String.fromCodePoint(c)
-}
-
 //8 kyu. Is this my tail?
 
 function correctTail(bod, tail) {
